@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kristina Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Petit+Formal+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button id="music-toggle" type="button" aria-label="Toggle music">Music: Off</button>
+
+    <main id="book" aria-live="polite">
+      <section class="page active" data-page="0">
+        <p class="script">My favorite story</p>
+        <h1>Kristina,<br />will you be my Valentine?</h1>
+        <p class="sub">No pressure. But also yes pressure. Because I love you.</p>
+        <button class="next" data-next="1" type="button">Turn the page -&gt;</button>
+      </section>
+
+      <section class="page" data-page="1">
+        <div class="chapters">
+          <h2>A Love Story</h2>
+          <p>
+            <span class="chapter-title">Chapter I - Once Upon a Time</span><br />
+            Once upon a time, there was a librarian with the kindest heart, and a guy who fell in
+            love faster than he expected.
+          </p>
+          <p>
+            <span class="chapter-title">Chapter II - The Quiet Magic</span><br />
+            Love did not arrive loudly. It showed up in shared meals, long talks, inside jokes, and
+            feeling at home.
+          </p>
+          <p>
+            <span class="chapter-title">Chapter III - Under the Stars</span>
+            <span class="stars" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span></span><br />
+            Then one night, under a meteor shower, I asked you a much bigger question. You said
+            yes. (Still my favorite plot twist.)
+          </p>
+          <button class="next" data-next="2" type="button">Next chapter -&gt;</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="2">
+        <h2>Why You Are My Valentine</h2>
+        <p class="sub">Evergreen Edition</p>
+        <div class="notes">
+          <article class="note">You make ordinary days feel soft and safe.</article>
+          <article class="note">You love stories, and you are one.</article>
+          <article class="note">You care deeply and quietly (my favorite kind).</article>
+          <article class="note">You are the person I want beside me in every chapter.</article>
+          <article class="note">Rizzo chose you. That is science.</article>
+        </div>
+        <button class="next" data-next="3" type="button">Continue -&gt;</button>
+      </section>
+
+      <section class="page" data-page="3">
+        <img
+          class="dog-image"
+          src="assets/images/rizzo-placeholder.svg"
+          alt="Placeholder for Rizzo photo"
+        />
+        <h2>The Dog Interlude</h2>
+        <p class="sub">Rizzo asked me to include this page. He says you are his Valentine too.</p>
+        <div class="button-row">
+          <button id="treat-button" type="button">Give Rizzo a treat</button>
+          <button class="next" data-next="4" type="button">Proceed to final question -&gt;</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="4">
+        <h2>So... now that we have reviewed the evidence,</h2>
+        <h1 class="final-ask">will you be my Valentine?</h1>
+        <div class="button-row">
+          <button class="next" data-next="5" type="button">Obviously yes</button>
+          <button class="next rose" data-next="5" type="button">Yes, but romantically</button>
+        </div>
+      </section>
+
+      <section class="page" data-page="5">
+        <p class="script">Confirmed.</p>
+        <h1>You are my Valentine.</h1>
+        <p class="sub">Today, tomorrow, and in all editions.</p>
+        <p class="closing">With all my love,<br />your husband</p>
+        <p class="footer-note">PS: click the tiny book in the corner.</p>
+      </section>
+    </main>
+
+    <button id="easter-egg" type="button" aria-label="Open inside joke">📚</button>
+    <aside id="inside-joke" hidden>
+      Inside joke unlocked: overdue library fines are waived forever for your smile.
+    </aside>
+
+    <audio id="bg-music" loop preload="none">
+      <source src="" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
