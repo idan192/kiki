@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080" viewBox="0 0 1080 1080" fill="none">
+  <rect width="1080" height="1080" fill="#F4EBDD"/>
+  <rect x="120" y="120" width="840" height="840" rx="30" fill="#FFF8ED" stroke="#B76E79" stroke-width="6" stroke-dasharray="18 16"/>
+  <text x="540" y="480" text-anchor="middle" fill="#3F2D28" font-family="Georgia, serif" font-size="66">Kristina Photo Placeholder</text>
+  <text x="540" y="560" text-anchor="middle" fill="#7F8D78" font-family="Georgia, serif" font-size="40">Drop your image in assets/images</text>
+</svg>
