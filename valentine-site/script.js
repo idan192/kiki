@@ -112,11 +112,7 @@ if (easterEggButton && insideJoke) {
 if (musicToggle && bgMusic) {
   let missingTrack = false;
 
-  bgMusic.addEventListener('error', () => {
-    missingTrack = true;
-  });
-
-  musicToggle.addEventListener('click', async () => {
+  async function playMusic() {
     const source = bgMusic.querySelector('source');
     const hasSource = source && source.getAttribute('src');
 
@@ -125,16 +121,46 @@ if (musicToggle && bgMusic) {
       setTimeout(() => {
         musicToggle.textContent = 'Music: Off';
       }, 1200);
-      return;
+      return false;
     }
 
     if (bgMusic.paused) {
       try {
         await bgMusic.play();
         musicToggle.textContent = 'Music: On';
+        return true;
       } catch {
-        musicToggle.textContent = 'Tap again';
+        musicToggle.textContent = 'Tap to start music';
+        return false;
       }
+    }
+
+    musicToggle.textContent = 'Music: On';
+    return true;
+  }
+
+  bgMusic.addEventListener('error', () => {
+    missingTrack = true;
+  });
+
+  // Autoplay on load when browser policy allows it.
+  void playMusic();
+
+  // If blocked by autoplay policy, start at first user interaction.
+  const unlockAutoplay = async () => {
+    const started = await playMusic();
+    if (started) {
+      window.removeEventListener('pointerdown', unlockAutoplay);
+      window.removeEventListener('keydown', unlockAutoplay);
+    }
+  };
+
+  window.addEventListener('pointerdown', unlockAutoplay);
+  window.addEventListener('keydown', unlockAutoplay);
+
+  musicToggle.addEventListener('click', async () => {
+    if (bgMusic.paused) {
+      await playMusic();
       return;
     }
 
