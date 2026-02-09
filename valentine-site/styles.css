@@ -193,11 +193,13 @@ blockquote {
 h1 {
   line-height: 1.1;
   font-size: clamp(2.1rem, 5vw, 3.95rem);
+  text-wrap: balance;
 }
 
 h2 {
   line-height: 1.18;
   font-size: clamp(1.5rem, 3vw, 2.45rem);
+  text-wrap: balance;
 }
 
 h3 {
@@ -252,25 +254,25 @@ blockquote {
 }
 
 .hero-page {
-  gap: 0.42rem;
+  gap: 0.36rem;
   align-content: center;
   padding-top: 0;
 }
 
 .hero-page h1 {
-  font-size: clamp(1.56rem, 3.6vw, 2.78rem);
+  font-size: clamp(1.58rem, 3.72vw, 2.86rem);
   line-height: 1.04;
   max-width: 15.4ch;
 }
 
 .hero-page .sub {
-  font-size: clamp(0.98rem, 1.64vw, 1.18rem);
+  font-size: clamp(1rem, 1.72vw, 1.22rem);
   max-width: 41ch;
 }
 
 .hero-page blockquote {
-  font-size: clamp(0.9rem, 1.42vw, 1.06rem);
-  line-height: 1.34;
+  font-size: clamp(0.92rem, 1.5vw, 1.1rem);
+  line-height: 1.32;
   max-width: 40ch;
 }
 
@@ -286,12 +288,11 @@ blockquote {
 }
 
 .hero-page .seal-button {
-  padding: 10px 18px;
-  font-size: 0.82rem;
+  margin-top: 0.05rem;
 }
 
 .hero-portrait {
-  width: clamp(78px, 13.2vw, 124px);
+  width: clamp(74px, 12.6vw, 118px);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   object-fit: cover;
@@ -444,9 +445,9 @@ button.rose {
 }
 
 .cta-uniform {
-  min-height: 42px;
-  padding: 10px 18px;
-  font-size: 0.82rem;
+  height: 42px;
+  padding: 0 18px;
+  font-size: 14px;
   line-height: 1;
   white-space: nowrap;
   display: inline-flex;
@@ -635,7 +636,7 @@ button.seal-button::after {
   }
 
   .hero-page h1 {
-    font-size: clamp(1.3rem, 5vw, 1.95rem);
+    font-size: clamp(1.34rem, 5.2vw, 2rem);
     max-width: 14.5ch;
   }
 
@@ -655,11 +656,13 @@ button.seal-button::after {
   .sub,
   .closing,
   .footer-note,
-  blockquote,
-  .chapter-copy p,
   .article-card p,
   .paw-note {
     font-size: clamp(1.02rem, 4vw, 1.22rem);
+  }
+
+  .cta-uniform {
+    font-size: 13px;
   }
 
   #music-toggle {
