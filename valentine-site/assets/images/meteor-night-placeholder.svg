@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="700" y1="0" x2="700" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F1A2E"/>
+      <stop offset="1" stop-color="#4A2A35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="1000" fill="url(#sky)"/>
+  <circle cx="230" cy="190" r="3" fill="#FCE8B7"/>
+  <circle cx="330" cy="120" r="4" fill="#FCE8B7"/>
+  <circle cx="470" cy="210" r="3" fill="#FCE8B7"/>
+  <circle cx="710" cy="170" r="3" fill="#FCE8B7"/>
+  <circle cx="900" cy="110" r="4" fill="#FCE8B7"/>
+  <circle cx="1080" cy="210" r="3" fill="#FCE8B7"/>
+  <circle cx="1230" cy="140" r="3" fill="#FCE8B7"/>
+  <path d="M420 310L760 210" stroke="#F7D58A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M790 390L1080 280" stroke="#F7D58A" stroke-width="5" stroke-linecap="round"/>
+  <path d="M180 500L420 430" stroke="#F7D58A" stroke-width="4" stroke-linecap="round"/>
+  <text x="700" y="880" text-anchor="middle" fill="#FFE6BF" font-family="Georgia, serif" font-size="52">
+    Replace with your meteor-shower memory photo
+  </text>
+</svg>

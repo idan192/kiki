@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1000" viewBox="0 0 1400 1000" fill="none">
+  <rect width="1400" height="1000" fill="#F3E6D2"/>
+  <rect x="80" y="80" width="1240" height="840" rx="26" fill="#FFF7EA" stroke="#8C5A4A" stroke-width="6"/>
+  <rect x="170" y="170" width="1060" height="660" rx="14" fill="#EAD9BF"/>
+  <rect x="220" y="220" width="160" height="560" rx="8" fill="#B58A4A" opacity="0.45"/>
+  <rect x="430" y="220" width="160" height="560" rx="8" fill="#7B2434" opacity="0.35"/>
+  <rect x="640" y="220" width="160" height="560" rx="8" fill="#6F7A5F" opacity="0.35"/>
+  <rect x="850" y="220" width="160" height="560" rx="8" fill="#8C5A4A" opacity="0.35"/>
+  <text x="700" y="885" text-anchor="middle" fill="#3A2620" font-family="Georgia, serif" font-size="48">
+    Replace with your cozy library photo
+  </text>
+</svg>
