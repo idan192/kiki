@@ -130,7 +130,7 @@ if (musicToggle && bgMusic) {
         musicToggle.textContent = 'Music: On';
         return true;
       } catch {
-        musicToggle.textContent = 'Tap to start music';
+        musicToggle.textContent = 'Music: Off';
         return false;
       }
     }
